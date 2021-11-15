@@ -4,27 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8715653a02aed9d8b7b891ef3335fa86",
+    "content-hash": "129f0e9cdd9471b061bf93eafed1ada5",
     "packages": [
         {
             "name": "michaeldrennen/calendar",
-            "version": "v0.04",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michaeldrennen/Calendar.git",
-                "reference": "79d28bd4d10f9a1e853d650436a6cd2824a2c50f"
+                "reference": "33afa866082dd6f1ca51667335da661a9701d8bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michaeldrennen/Calendar/zipball/79d28bd4d10f9a1e853d650436a6cd2824a2c50f",
-                "reference": "79d28bd4d10f9a1e853d650436a6cd2824a2c50f",
+                "url": "https://api.github.com/repos/michaeldrennen/Calendar/zipball/33afa866082dd6f1ca51667335da661a9701d8bc",
+                "reference": "33afa866082dd6f1ca51667335da661a9701d8bc",
                 "shasum": ""
             },
             "require": {
                 "nesbot/carbon": "^2.23"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.3"
+                "phpunit/phpunit": "^8.3||^9.0"
             },
             "type": "library",
             "autoload": {
@@ -45,9 +45,9 @@
             "description": "A PHP library to help querying dates.",
             "support": {
                 "issues": "https://github.com/michaeldrennen/Calendar/issues",
-                "source": "https://github.com/michaeldrennen/Calendar/tree/v0.04"
+                "source": "https://github.com/michaeldrennen/Calendar/tree/v1.0.0"
             },
-            "time": "2019-09-03T06:12:59+00:00"
+            "time": "2021-01-15T23:19:11+00:00"
         },
         {
             "name": "nesbot/carbon",
