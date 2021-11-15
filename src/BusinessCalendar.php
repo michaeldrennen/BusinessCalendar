@@ -3,6 +3,7 @@
 namespace MichaelDrennen\BusinessCalendar;
 
 use Carbon\Carbon;
+use MichaelDrennen\Calendar\USMarket;
 
 class BusinessCalendar {
 
@@ -267,5 +268,15 @@ class BusinessCalendar {
             endif;
             $date = $date->addDay();
         } while ( FALSE === $isBusinessDate );
+    }
+
+
+    /**
+     * @param Carbon $dateTime
+     * @return Carbon
+     */
+    public static function getNextUSMarketOpen( Carbon $dateTime ): Carbon {
+        $usMarket = new USMarket();
+        return $usMarket->getnextTradingDaysOpen( $dateTime );
     }
 }
