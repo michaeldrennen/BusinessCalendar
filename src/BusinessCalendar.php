@@ -22,7 +22,9 @@ class BusinessCalendar {
      * Given an integer year, this method will return a Carbon object representing the
      * Easter date from that year. Otherwise it will throw an exception.
      * TODO Make the searching through the text file for the year more efficient.
-     * @param $year
+     *
+     * @param int $year
+     *
      * @return Carbon
      * @throws \Exception
      */
@@ -173,8 +175,11 @@ class BusinessCalendar {
 
     /**
      * Given a string date, this method will return true if the date was a weekend.
+     *
      * @see https://www.php.net/manual/en/function.date.php
-     * @param $argDate
+     *
+     * @param string $argDate
+     *
      * @return bool
      */
     public static function isWeekend( string $argDate ): bool {
@@ -199,7 +204,7 @@ class BusinessCalendar {
      * @return bool
      * @throws \Exception
      */
-    public static function isBusinessDay( $argDate ) {
+    public static function isBusinessDay( $argDate ): bool {
         if ( self::isWeekend( $argDate ) ):
             return FALSE;
         endif;
